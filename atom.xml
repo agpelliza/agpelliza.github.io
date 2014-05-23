@@ -4,7 +4,7 @@
   <title><![CDATA[agpelliza]]></title>
   <link href="http://agpelliza.github.io/atom.xml" rel="self"/>
   <link href="http://agpelliza.github.io/"/>
-  <updated>2014-04-15T12:34:09-03:00</updated>
+  <updated>2014-05-23T10:38:04-03:00</updated>
   <id>http://agpelliza.github.io/</id>
   <author>
     <name><![CDATA[agpelliza]]></name>
@@ -12,5 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Git Everything!]]></title>
+    <link href="http://agpelliza.github.io/blog/2014/05/23/git-everything/"/>
+    
+    <updated>2014-05-23T10:27:39-03:00</updated>
+    <id>http://agpelliza.github.io/blog/2014/05/23/git-everything</id>
+    
+    <content type="html"><![CDATA[
+]]></content>
+    
+  </entry>
   
 </feed>
