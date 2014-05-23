@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://agpelliza.github.io/sitemap.xml 
