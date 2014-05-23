@@ -169,6 +169,28 @@ header a:hover {
 /*
 /*****************************************************************************/
 
+.content {
+  margin-bottom: 2em;
+}
+
+.content h2 {
+  margin-top: 1.5em;
+}
+
+.content h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content a {
+  color: #2795B6;
+  text-decoration: none;
+}
+
+.content .subheader {
+  color: #CCC;
+}
+
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;

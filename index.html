@@ -3,26 +3,38 @@ layout: default
 title: Agustín Pelliza
 ---
 
-<div id="home" class="content">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<section class="content">
+  <section id="posts">
+    <h2><a href="#posts"># Blog Posts</a></h2>
+    
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
 
-  <h1>Highlighted Media</h1>
-  <ul class="posts">
-    <li><span>23 Nov 2010</span> &raquo; <a href="http://vimeo.com/17118008">Video: Erlang Factory - Mastering Git Basics</a></li>
-  </ul>
+  <section id="media">
+    <h2><a href="#media"># Highlighted Media</a></h2>
+    
+    <ul class="posts">
+      <li><span>23 Nov 2010</span> &raquo; <a href="http://vimeo.com/17118008">Video: Erlang Factory - Mastering Git Basics</a></li>
+    </ul>
+  </section>
 
-  <h1>Other Interviews, Talks, Etc</h1>
-  <ul class="posts">
-    <li><span>12 Sep 2013</span> &raquo; <a href="http://www.youtube.com/watch?v=k2vJNNAQZlg">Video: Fox Business News interview</a></li>
-  </ul>
+  <section id="others">
+    <h2><a href="#others"># Other Interviews, Talks, Etc</a></h2>
+    
+    <ul class="posts">
+      <li><span>12 Sep 2013</span> &raquo; <a href="http://www.youtube.com/watch?v=k2vJNNAQZlg">Video: Fox Business News interview</a></li>
+    </ul>
+  </section>
 
-  <h1>Prominent Open Source Projects</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/agpelliza/assigner">Assigner:</a> Ruby assigner.</li>
-  </ul>
-</div>
+  <section id="projects">
+    <h2><a href="#projects"># Prominent Open Source Projects</a></h2>
+
+    <ul class="posts">
+      <li><a href="http://github.com/agpelliza/assigner">Assigner:</a> Ruby assigner.</li>
+    </ul>
+  </section>
+</section>
