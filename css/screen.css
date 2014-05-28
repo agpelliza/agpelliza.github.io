@@ -219,26 +219,15 @@ ul.posts {
   /* standard */
 
   #post pre {
-    border: 1px solid #ddd;
+    font-size: 15px;
     background-color: #eef;
-    padding: 0 .4em;
+    padding: 8px;
   }
 
   #post ul,
   #post ol {
     margin-left: 1.35em;
   }
-
-  #post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    font-size: 85%;
-    padding: 0 .2em;
-  }
-
-    #post pre code {
-      border: none;
-    }
 
   /* terminal */
 
