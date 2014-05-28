@@ -219,8 +219,10 @@ ul.posts {
   /* standard */
 
   #post pre {
+    white-space: pre-wrap;
     font-size: 15px;
     background-color: #eef;
+    border: 1px solid #888;
     padding: 8px;
   }
 
@@ -253,5 +255,9 @@ ul.posts {
   .content {
     width: 670px;
     margin: 0 auto;
+  }
+
+  #post pre span {
+    width: 670px;
   }
 }
