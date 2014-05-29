@@ -14,23 +14,23 @@ I was also impressed with Git's simplicity. Every command is like magic turning 
 
 Start managing a repository with Git is this simple:
 
-<pre class="highlight">
-<span class="pln">git init </span><span class="c"># To initialize your repository with Git management</span>
-<span class="pln">touch README.md </span><span class="c"># Do some change to the repo</span>
-<span class="pln">git add . </span><span class="c"># Collect the changes you have done</span>
-<span class="pln">git commit -m "first commit" </span><span class="c"># Commit your changes</span>
-</pre>
+{% highlight bash %}
+git init # To initialize your repository with Git management
+touch README.md # Do some change to the repo
+git add . # Collect the changes you have done
+git commit -m "first commit" # Commit your changes
+{% endhighlight %}
 
 The basic flow on Git is as trivial as this (lets say you have just initialized the repo and you want to start with an issue):
 
-<pre class="highlight">
-<span class="pln">git checkout -b my_issue </span><span class="c"># Creates a local branch and starts using it</span>
-<span class="pln">echo "#My first issue" > README.md </span><span class="c"># Do your work</span>
-<span class="pln">git add . </span><span class="c"># Collect the changes you have done</span>
-<span class="pln">git commit -m "fix my first issue" </span><span class="c"># Commit your changes</span>
-<span class="pln">git checkout master </span><span class="c"># Go back to the master branch</span>
-<span class="pln">git merge my_issue </span><span class="c"># Merge your changes into the master branch</span>
-</pre>
+{% highlight bash %}
+git checkout -b my_issue # Creates a local branch and starts using it
+echo "#My first issue" > README.md # Do your work
+git add . # Collect the changes you have done
+git commit -m "fix my first issue" # Commit your changes
+git checkout master # Go back to the master branch
+git merge my_issue # Merge your changes into the master branch
+{% endhighlight %}
 
 It's a simple yet powerful tool. There are many sweet commands at Git that let you do your work in a faster and secure way. If you are interested in learning Git's beauties I suggest you to take a look at the online [Pro Git](http://www.git-scm.com/book) book. There you will find on how to get Git installed and configured on whatever platform you are running. Also, it's a complete guide to learn Git and it's commands.
 
