@@ -192,6 +192,8 @@ header a:hover {
 }
 
 ul.posts {
+  font-size: 20px;
+  line-height: 160%;
   list-style-type: none;
   margin-bottom: 2em;
   padding-left: 10px;
@@ -218,6 +220,11 @@ ul.posts {
 }
 
   /* standard */
+
+  #post {
+    font-size: 20px;
+    line-height: 160%;
+  }
 
   #post pre {
     white-space: pre-wrap;
