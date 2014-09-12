@@ -4,7 +4,7 @@ title: Git Everything!
 ---
 
 {{ page.title }}
-================
+----------------
 
 <p class="meta">28 May 2014 - Buenos Aires, Argentina</p>
 

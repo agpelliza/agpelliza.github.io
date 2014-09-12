@@ -4,7 +4,7 @@ title: Easy is not Simple
 ---
 
 {{ page.title }}
-================
+----------------
 
 <p class="meta">28 Aug 2014 - Buenos Aires, Argentina</p>
 
