@@ -7,160 +7,11 @@
 /* Site */
 
 body {
-  font-family: "Merriweather", serif;
-}
-    
-.nav {
-  width: 100%;
-  border-top: 4px solid #4d4d4d;
-  margin: 0 auto;
+  font-family: "Roboto Slab",serif;
 }
 
-/* Header styles */
-
-header {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 100%;
-  margin: 40px auto 0;
-  text-align: center;
-  position: relative;
-}
-  
-header h1 {
-  font-size: 50px;
-  letter-spacing: -1px;
-  color: #333333;
-  margin: 0;
-  padding: 0;
-}
-  
-header h2 {
-  margin: 0;
-  padding: 0;
-  color: #777777;
-  font-size: 22px;
-  font-weight: normal;
-}
-  
-header hr {
-  margin: 20px 0 20px;
-  padding: 0;
-  width: 100%;
-  height: 0;
-  border: none;
-  border-bottom: 1px solid #cccccc;
-}
-
-header a {
-  text-decoration: none;
-  color: #333333;
-}
-  
-header a:hover {
-  text-decoration: underline;
-}
-
-.social-bar {
-  position: relative;
-  padding-top: 15px;
-  margin-bottom: 50px;
-}
-
-.social-bar-buttons {
-  position: absolute;
-  top: 16px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 230px;
-  text-align: center;
-}
-.social-bar-buttons:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  clear: both;
-}
-
-.social-bar-buttons a {
-  display: block;
-  float: left;
-  font-size: 14px;
-  padding: 4.667px 14px;
-  color: white;
-  text-decoration: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  background-color: #eeeeee;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-}
-
-.social-bar-buttons a:hover {
-  background-color: white;
-}
-
-.social-bar-buttons a:first-child {
-  border-left: none;
-  -moz-border-radius: 4px 0 0 4px;
-  -webkit-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
-}
-
-.social-bar-buttons a:last-child {
-  border-right: none;
-  -moz-border-radius: 0 4px 4px 0px;
-  -webkit-border-radius: 0 4px 4px 0px;
-  border-radius: 0 4px 4px 0px;
-}
-
-.social-bar-buttons a.active, .social-bar-buttons a:active {
-  background-color: #eeeeee;
-  -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.social-bar-buttons a {
-  color: #333333;
-  text-shadow: none;
-  position: relative;
-  height: 24px;
-  padding: 5px 10px 5px 34px;
-  line-height: 24px;
-  border-top: 1px solid #cccccc;
-  border-bottom: 4px solid #aaaaaa;
-  -moz-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 rgba(255, 255, 255, 0.8), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 rgba(255, 255, 255, 0.8), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 rgba(255, 255, 255, 0.8), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eeeeee));
-  background-image: -moz-linear-gradient(top, #f5f5f5, #eeeeee);
-}
-
-.social-bar-buttons a:hover, .social-bar-buttons a.active {
-  background: #ebebeb;
-}
-
-.social-bar-buttons a:first-child {
-  border-left: 1px solid #cccccc;
-  padding-left: 34px;
-}
-
-.social-bar-buttons a:last-child {
-  border-right: 1px solid #cccccc;
-}
-
-.social-bar-buttons a img {
-  position: absolute;
-  left: 10px;
-  display: block;
+.content {
+  margin-bottom: 2em;
 }
 
 /*****************************************************************************/
@@ -169,29 +20,43 @@ header a:hover {
 /*
 /*****************************************************************************/
 
-.content {
-  margin-bottom: 2em;
+.home {
+  height: 20em;
+  position: relative;
 }
 
-.content h2 {
-  margin-top: 1.5em;
+.home p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.content h2 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.content a {
+.home p a {
   color: #2795B6;
   text-decoration: none;
 }
 
-.content .subheader {
-  color: #CCC;
+/*****************************************************************************/
+/*
+/* Posts Lists
+/*
+/*****************************************************************************/
+
+.posts h2 {
+  color: #666;
+  margin-top: 1.5em;
 }
 
-ul.posts {
+.posts h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.posts ul {
   font-size: 20px;
   line-height: 160%;
   list-style-type: none;
@@ -199,65 +64,65 @@ ul.posts {
   padding-left: 10px;
 }
 
-  ul.posts li {
-    line-height: 1.75em;
-  }
+.posts ul li {
+  line-height: 1.75em;
+}
 
-  ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
-  }
+.posts ul a {
+  color: #2795B6;
+  text-decoration: none;
+}
+
+.posts ul span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
 
 /*****************************************************************************/
 /*
-/* Posts
+/* Post
 /*
 /*****************************************************************************/
 
-#post {
-
+.post {
+  font-size: 20px;
+  line-height: 160%;
 }
 
-  /* standard */
-
-  #post {
-    font-size: 20px;
-    line-height: 160%;
-  }
-
-  #post pre {
-    white-space: pre-wrap;
-    font-size: 15px;
-    background-color: #eef;
-    border: 1px solid #888;
-    padding: 8px;
-  }
-
-  #post ul,
-  #post ol {
-    margin-left: 1.35em;
-  }
-
-  /* terminal */
-
-  #post pre.terminal {
-    border: 1px solid black;
-    background-color: #333;
-    color: white;
-  }
-
-  #post pre.terminal code {
-    background-color: #333;
-  }
-
-#related {
-  margin-top: 2em;
+.post h2 {
+  color: #666;
+  margin-top: 1.5em;
 }
 
-  #related h2 {
-    margin-bottom: 1em;
-  }
+.post pre {
+  white-space: pre-wrap;
+  font-size: 15px;
+  background-color: #eef;
+  border: 1px solid #888;
+  padding: 8px;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* Responsive
+/*
+/*****************************************************************************/
 
 @media only screen and (min-width: 670px) {
   .content {
@@ -265,7 +130,7 @@ ul.posts {
     margin: 0 auto;
   }
 
-  #post pre span {
+  .post pre span {
     width: 670px;
   }
 }

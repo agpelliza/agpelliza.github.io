@@ -1,0 +1,16 @@
+---
+layout: default
+title: Guides
+---
+
+<section class="content">
+  <section class="posts">
+    <h2><a href="#guides"># Guides</a></h2>
+
+    <ul>
+      {% for post in site.categories.guides %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+</section>

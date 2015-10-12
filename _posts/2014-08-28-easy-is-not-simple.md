@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Easy is not Simple
+category: guides
 ---
 
 {{ page.title }}

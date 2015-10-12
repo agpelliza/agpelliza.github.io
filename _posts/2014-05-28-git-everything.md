@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Git Everything!
+category: experiences
 ---
 
 {{ page.title }}
