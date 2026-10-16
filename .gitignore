@@ -2,3 +2,6 @@
 _drafts/
 _site/
 *~
+
+vendor/
+.bundle/
