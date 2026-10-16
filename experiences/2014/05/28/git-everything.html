@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+    <title>Git Everything!</title>
+  </head>
+  <body>
+
+  <div class="content">
+  <div class="post">
+  <h2 id="git-everything">Git Everything!</h2>
+
+<p class="meta">28 May 2014 - Buenos Aires, Argentina</p>
+
+<p>First time I met Git (the version control tool) I was amazed with the flexibility it gives you to work on every commit. When you turn to Git you suddenly become the owner of your code and the tool does what is your will, and not the other way round.</p>
+
+<p>I was also impressed with Git’s simplicity. Every command is like magic turning all over, as you would expect, but that’s not all.</p>
+
+<p>Start managing a repository with Git is this simple:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git init <span class="c"># To initialize your repository with Git management</span>
+<span class="nb">touch </span>README.md <span class="c"># Do some change to the repo</span>
+git add <span class="nb">.</span> <span class="c"># Collect the changes you have done</span>
+git commit <span class="nt">-m</span> <span class="s2">"first commit"</span> <span class="c"># Commit your changes</span></code></pre></figure>
+
+<p>The basic flow on Git is as trivial as this (lets say you have just initialized the repo and you want to start with an issue):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout <span class="nt">-b</span> my_issue <span class="c"># Creates a local branch and starts using it</span>
+<span class="nb">echo</span> <span class="s2">"#My first issue"</span> <span class="o">&gt;</span> README.md <span class="c"># Do your work</span>
+git add <span class="nb">.</span> <span class="c"># Collect the changes you have done</span>
+git commit <span class="nt">-m</span> <span class="s2">"fix my first issue"</span> <span class="c"># Commit your changes</span>
+git checkout master <span class="c"># Go back to the master branch</span>
+git merge my_issue <span class="c"># Merge your changes into the master branch</span></code></pre></figure>
+
+<p>It’s a simple yet powerful tool. There are many sweet commands at Git that let you do your work in a faster and secure way. If you are interested in learning Git’s beauties I suggest you to take a look at the online <a href="http://www.git-scm.com/book">Pro Git</a> book. There you will find on how to get Git installed and configured on whatever platform you are running. Also, it’s a complete guide to learn Git and it’s commands.</p>
+
+<p>As good as the <a href="http://www.git-scm.com/book">Pro Git</a> book is to learn Git, I think the only way to take full advantage of a tool is to understand it’s design and how it was intended to work. Here is a great <a href="http://tom.preston-werner.com/2009/05/19/the-git-parable.html">post</a> by Tom Preston-Werner (Github’s co-founder) with a parable on how Git works that I found particularly interesting.</p>
+
+<p>But all of this are old news. What I have recently found is that Git’s power goes far beyond the limits of source control. It’s simplicity makes it ideal to manage any file-based working set. For saying, managing dotfiles is a fairly common usage for Git, as well as any other configuration files. It’s also widely used as the basis for deploying strategies, not just for application as <a href="https://www.heroku.com/">Heroku</a> does, but on static sites like <a href="http://jekyllrb.com/">Jekyll</a> does or online books like <a href="https://www.gitbook.io/">GitBook</a> does, among others.</p>
+
+<p>A really interesting usage is to manage file-based plugins. You can keep each plugin for your application under an independent version control, then updating it is as simple as pulling the changes from the origin and trying different versions is just moving around commits.</p>
+
+<p>Git’s power is in it’s simplicity, that makes Git excellent to manage almost any repository you are working on. Never mind if you are working on a software application, a new plugin for your favorite editor, a new book, a post or some draft for planning your next trip. Whatever it is, having it under control gives you a lot of confidence on doing and undoing at will, trying crazy things with no harm or risk of losing your ideas and work. Now a days I don’t even start working on anything without initializing it on Git.. so, Git everything!</p>
+
+  </div>
+
+  <div class="posts">
+    <h2># Related Posts</h2>
+    <ul>
+      
+        <li><span>28 Aug 2014</span> &raquo; <a href="/guides/2014/08/28/easy-is-not-simple.html">Easy is not Simple</a></li>
+      
+    </ul>
+  </div>
+</div>
+  </body>
+</html>

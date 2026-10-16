@@ -1,0 +1,136 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Site */
+
+body {
+  font-family: "Roboto Slab",serif;
+}
+
+.content {
+  margin-bottom: 2em;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+.home {
+  height: 20em;
+  position: relative;
+}
+
+.home p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.home p a {
+  color: #2795B6;
+  text-decoration: none;
+}
+
+/*****************************************************************************/
+/*
+/* Posts Lists
+/*
+/*****************************************************************************/
+
+.posts h2 {
+  color: #666;
+  margin-top: 1.5em;
+}
+
+.posts h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.posts ul {
+  font-size: 20px;
+  line-height: 160%;
+  list-style-type: none;
+  margin-bottom: 2em;
+  padding-left: 10px;
+}
+
+.posts ul li {
+  line-height: 1.75em;
+}
+
+.posts ul a {
+  color: #2795B6;
+  text-decoration: none;
+}
+
+.posts ul span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+
+/*****************************************************************************/
+/*
+/* Post
+/*
+/*****************************************************************************/
+
+.post {
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.post h2 {
+  color: #666;
+  margin-top: 1.5em;
+}
+
+.post pre {
+  white-space: pre-wrap;
+  font-size: 15px;
+  background-color: #eef;
+  border: 1px solid #888;
+  padding: 8px;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* Responsive
+/*
+/*****************************************************************************/
+
+@media only screen and (min-width: 670px) {
+  .content {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .post pre span {
+    width: 670px;
+  }
+}
