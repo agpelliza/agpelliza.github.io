@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Build the site and publish _site/ to the gh-pages branch.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+if [ -n "$(git status --porcelain)" ]; then
+  echo "Working tree has uncommitted changes; commit or stash them first." >&2
+  exit 1
+fi
+
+source_rev=$(git rev-parse --short HEAD)
+JEKYLL_ENV=production bundle exec jekyll build
+
+worktree=$(mktemp -d)
+cleanup() {
+  git worktree remove --force "$worktree" >/dev/null 2>&1 || true
+  rm -rf "$worktree"
+}
+trap cleanup EXIT
+
+git fetch -q origin gh-pages 2>/dev/null || true
+if git rev-parse --verify --quiet origin/gh-pages >/dev/null; then
+  git worktree add -q -B gh-pages "$worktree" origin/gh-pages
+else
+  git worktree add -q --detach "$worktree"
+  git -C "$worktree" checkout -q --orphan gh-pages
+  git -C "$worktree" rm -rfq .
+fi
+
+rsync -a --delete --exclude .git _site/ "$worktree"/
+touch "$worktree/.nojekyll"
+
+git -C "$worktree" add -A
+if git -C "$worktree" diff --cached --quiet; then
+  echo "gh-pages is already up to date."
+  exit 0
+fi
+
+git -C "$worktree" commit -qm "Deploy $source_rev"
+git -C "$worktree" push -q origin gh-pages
+echo "Deployed $source_rev to gh-pages."
