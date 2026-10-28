@@ -1,0 +1,15 @@
+{% comment %} Front and back body map with the page's working muscles filled in. {% endcomment %}
+{% assign mapa = include.mapa | default: page.mapa %}
+<div class="mapa">
+{% for lado in site.data.mapa_muscular %}
+  <figure>
+    <svg viewBox="0 0 1000 2200" role="img" aria-label="{{ lado[0] }}">
+    {% for s in lado[1] %}
+      {% if mapa.principales contains s.m %}{% assign c = "principal" %}{% elsif mapa.secundarios contains s.m %}{% assign c = "secundario" %}{% else %}{% assign c = "" %}{% endif %}
+      <polygon points="{{ s.p }}" class="{{ c }}"/>
+    {% endfor %}
+    </svg>
+    <figcaption>{{ lado[0] }}</figcaption>
+  </figure>
+{% endfor %}
+</div>

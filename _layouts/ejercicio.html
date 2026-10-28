@@ -1,0 +1,62 @@
+---
+layout: default
+---
+{% assign slug = page.name | remove: ".md" %}
+{% capture ruta %}/training/ejercicios/{{ slug }}/{% endcapture %}
+<div class="content">
+  <div class="post training ejercicio">
+    <p class="back"><a href="/training/">&laquo; Plan semanal</a></p>
+    <h2 class="title">{{ page.title }}</h2>
+    {% if page.principales %}<p class="meta">{{ page.principales | join: " · " }}</p>{% endif %}
+
+    {% if page.imagenes %}
+      <div class="imagenes">
+      {% for img in page.imagenes %}
+        <figure>
+          <img src="/img/ejercicios/{{ img }}.webp" alt="{{ page.title }}">
+          {% if page.imagenes.size > 1 %}<figcaption>{% if forloop.first %}inicio{% else %}final{% endif %}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.mapa %}{% include mapa-muscular.html %}{% endif %}
+    {% if page.nota %}<p class="nota">{{ page.nota }}</p>{% endif %}
+
+    {{ content }}
+
+    {% if page.secundarios %}<p><strong>Ayudan:</strong> {{ page.secundarios | join: ", " }}.</p>{% endif %}
+
+    {% if page.pasos %}
+      <p><strong>Cómo hacerlo:</strong></p>
+      <ol>{% for paso in page.pasos %}<li>{{ paso }}</li>{% endfor %}</ol>
+    {% endif %}
+
+    {% if page.consejos %}
+      <p><strong>Consejos:</strong></p>
+      <ul>{% for consejo in page.consejos %}<li>{{ consejo }}</li>{% endfor %}</ul>
+    {% endif %}
+
+    {% for s in page.secciones %}
+      <h3 id="{{ s.id }}">{{ s.nombre }}</h3>
+      <p class="meta">{{ s.musculos | join: " · " }}</p>
+      <div class="imagenes"><figure><img src="/img/ejercicios/{{ s.imagen }}.webp" alt="{{ s.nombre }}"></figure></div>
+      {% if s.mapa %}{% include mapa-muscular.html mapa=s.mapa %}{% endif %}
+      <ol>{% for paso in s.pasos %}<li>{{ paso }}</li>{% endfor %}</ol>
+    {% endfor %}
+
+    <p class="meta">En el plan:
+    {% assign primero = true %}
+    {% for d in site.data.training %}
+      {% if d.slug %}
+        {% capture url %}/training/{{ d.slug }}/{% endcapture %}
+        {% assign dia = site.pages | where: "url", url | first %}
+        {% if dia.content contains ruta %}{% unless primero %} · {% endunless %}<a href="{{ url }}">{{ d.dia }}</a>{% assign primero = false %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    {% if page.imagenes or page.secciones %}
+      <p class="meta">Exercise data by <a href="https://repdb.co" rel="nofollow">RepDB (repdb.co)</a></p>
+    {% endif %}
+  </div>
+</div>

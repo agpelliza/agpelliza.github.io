@@ -14,3 +14,8 @@ defaults:
       layout: training
       lang: es
       permalink: /training/:basename/
+  - scope:
+      path: training/ejercicios
+    values:
+      layout: ejercicio
+      permalink: /training/ejercicios/:basename/
