@@ -196,3 +196,64 @@ body {
     overflow-x: auto;
   }
 }
+
+.ejercicio .imagenes {
+  display: flex;
+  gap: 12px;
+  margin: 1em 0;
+}
+
+.ejercicio figure {
+  flex: 0 1 50%;
+  margin: 0;
+}
+
+.ejercicio figure img {
+  display: block;
+  width: 100%;
+}
+
+.ejercicio figcaption {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 13px;
+  text-align: center;
+}
+
+.ejercicio .nota {
+  color: #888;
+  font-size: 16px;
+}
+
+.ejercicio h3 {
+  color: #666;
+  margin: 2em 0 0;
+}
+
+.ejercicio .mapa {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.ejercicio .mapa figure {
+  flex: 0 0 110px;
+}
+
+.ejercicio .mapa svg {
+  display: block;
+  width: 100%;
+}
+
+.ejercicio .mapa polygon {
+  fill: #ddd;
+}
+
+.ejercicio .mapa polygon.principal {
+  fill: #E8833A;
+}
+
+.ejercicio .mapa polygon.secundario {
+  fill: #F2C29B;
+}
