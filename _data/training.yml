@@ -1,0 +1,36 @@
+# Weekly schedule for /training. Days with a slug get their own page at
+# /training/<slug>/ and are linked from the summary and the day navigation.
+- dia: Lunes
+  slug: lunes
+  sesion: Tren superior
+  duracion: ~57 min
+  tenis: "Sí"
+- dia: Martes
+  sesion: Descanso total
+  duracion: —
+  tenis: "No"
+- dia: Miércoles
+  slug: miercoles
+  sesion: Cardio suave y hombro
+  duracion: ~55 min
+  tenis: "Sí"
+- dia: Jueves
+  slug: jueves
+  sesion: Full body y agilidad (moderado)
+  duracion: ~48 min
+  tenis: "No"
+- dia: Viernes
+  slug: viernes
+  sesion: Core y movilidad
+  duracion: ~35 min
+  tenis: "Sí"
+- dia: Sábado
+  slug: sabado
+  sesion: Piernas y potencia
+  duracion: ~55 min
+  tenis: "No"
+- dia: Domingo
+  slug: domingo
+  sesion: Bici al aire libre
+  duracion: 45–60 min
+  tenis: "No"

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign days = site.data.training | where_exp: "d", "d.slug" %}
+{% assign slug = page.name | remove: ".md" %}
+<div class="content">
+  <div class="post training">
+  {% if slug == "index" %}
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.meta }}</p>
+  {% else %}
+    {% for d in days %}
+      {% if d.slug == slug %}
+        {% assign day = d %}
+        {% assign i = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    {% assign prev_i = i | minus: 1 | plus: days.size | modulo: days.size %}
+    {% assign next_i = i | plus: 1 | modulo: days.size %}
+    {% assign prev = days[prev_i] %}
+    {% assign next = days[next_i] %}
+    <p class="meta"><a href="/training/">&laquo; Plan semanal</a></p>
+    <h1>{{ day.dia }} – {{ day.sesion }}</h1>
+    <p class="meta">{{ day.duracion }}{% if day.tenis == "Sí" %} · Día de tenis{% endif %}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% if slug != "index" %}
+    <nav class="days">
+      <a href="/training/{{ prev.slug }}/">&laquo; {{ prev.dia }}</a>
+      <a href="/training/{{ next.slug }}/">{{ next.dia }} &raquo;</a>
+    </nav>
+  {% endif %}
+  </div>
+</div>

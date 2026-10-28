@@ -7,3 +7,10 @@ exclude:
   - README.md
   - bin
   - vendor
+defaults:
+  - scope:
+      path: training
+    values:
+      layout: training
+      lang: es
+      permalink: /training/:basename/
