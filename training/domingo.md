@@ -1,5 +1,4 @@
 ---
-title: Domingo – Bici al aire libre
 ---
 
 Recuperación activa y quema de grasa antes del tenis del lunes.

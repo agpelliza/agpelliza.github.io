@@ -1,0 +1,10 @@
+{% comment %} A "# Title" heading over a dated list of posts, newest first. {% endcomment %}
+{% assign limit = include.limit | default: include.posts.size %}
+<section class="posts">
+  <h2># {{ include.title }}</h2>
+  <ul>
+    {% for post in include.posts limit: limit %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,5 +1,4 @@
 ---
-title: Miércoles – Cardio suave y hombro
 ---
 
 Sesión liviana que suma quema de grasa y protege hombro, cadera y rodilla para el tenis.

@@ -9,16 +9,7 @@ layout: default
     <h2 class="title">{{ page.title }}</h2>
     {% if page.principales %}<p class="meta">{{ page.principales | join: " · " }}</p>{% endif %}
 
-    {% if page.imagenes %}
-      <div class="imagenes">
-      {% for img in page.imagenes %}
-        <figure>
-          <img src="/img/ejercicios/{{ img }}.webp" alt="{{ page.title }}">
-          {% if page.imagenes.size > 1 %}<figcaption>{% if forloop.first %}inicio{% else %}final{% endif %}</figcaption>{% endif %}
-        </figure>
-      {% endfor %}
-      </div>
-    {% endif %}
+    {% if page.imagenes %}{% include imagenes.html imagenes=page.imagenes alt=page.title %}{% endif %}
     {% if page.mapa %}{% include mapa-muscular.html %}{% endif %}
     {% if page.nota %}<p class="nota">{{ page.nota }}</p>{% endif %}
 
@@ -39,7 +30,8 @@ layout: default
     {% for s in page.secciones %}
       <h3 id="{{ s.id }}">{{ s.nombre }}</h3>
       <p class="meta">{{ s.musculos | join: " · " }}</p>
-      <div class="imagenes"><figure><img src="/img/ejercicios/{{ s.imagen }}.webp" alt="{{ s.nombre }}"></figure></div>
+      {% assign imagenes = s.imagen | split: "," %}
+      {% include imagenes.html imagenes=imagenes alt=s.nombre %}
       {% if s.mapa %}{% include mapa-muscular.html mapa=s.mapa %}{% endif %}
       <ol>{% for paso in s.pasos %}<li>{{ paso }}</li>{% endfor %}</ol>
     {% endfor %}

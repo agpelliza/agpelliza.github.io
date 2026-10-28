@@ -1,5 +1,4 @@
 ---
-title: Viernes – Core y movilidad
 ---
 
 Sesión corta. El core estable es la base del saque y de los golpes de fondo.

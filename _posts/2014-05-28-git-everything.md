@@ -1,13 +1,7 @@
 ---
-layout: post
 title: Git Everything!
 category: experiences
 ---
-
-{{ page.title }}
-----------------
-
-<p class="meta">28 May 2014 - Buenos Aires, Argentina</p>
 
 First time I met Git (the version control tool) I was amazed with the flexibility it gives you to work on every commit. When you turn to Git you suddenly become the owner of your code and the tool does what is your will, and not the other way round.
 

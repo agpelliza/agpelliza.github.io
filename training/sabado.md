@@ -1,5 +1,4 @@
 ---
-title: Sábado – Piernas y potencia
 ---
 
 La sesión más exigente. Los saltos van primero, con las piernas frescas. Con 10 kg, el estímulo viene de trabajar a una pierna y bajar lento (3 s). Arrancá con el [calentamiento](/training/#calentamiento) (8 min).

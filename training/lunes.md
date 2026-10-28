@@ -1,5 +1,4 @@
 ---
-title: Lunes – Tren superior
 ---
 
 Hacela después del tenis o en otro momento del día. Arrancá con el [calentamiento](/training/#calentamiento) (8 min).

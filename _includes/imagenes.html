@@ -1,0 +1,9 @@
+{% comment %} Exercise photos; with two, they're captioned as start and end positions. {% endcomment %}
+<div class="imagenes">
+{% for img in include.imagenes %}
+  <figure>
+    <img src="/img/ejercicios/{{ img }}.webp" alt="{{ include.alt }}">
+    {% if include.imagenes.size > 1 %}<figcaption>{% if forloop.first %}inicio{% else %}final{% endif %}</figcaption>{% endif %}
+  </figure>
+{% endfor %}
+</div>

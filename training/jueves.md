@@ -1,5 +1,4 @@
 ---
-title: Jueves – Full body y agilidad
 ---
 
 Versión moderada: 3 vueltas y 2–3 repeticiones en reserva, para llegar fresco al tenis del viernes. Arrancá con el [calentamiento](/training/#calentamiento) (8 min).

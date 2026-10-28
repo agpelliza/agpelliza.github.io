@@ -9,6 +9,11 @@ exclude:
   - vendor
 defaults:
   - scope:
+      path: _posts
+    values:
+      layout: post
+      location: Buenos Aires, Argentina
+  - scope:
       path: training
     values:
       layout: training

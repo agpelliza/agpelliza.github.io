@@ -1,13 +1,7 @@
 ---
-layout: post
 title: Easy is not Simple
 category: guides
 ---
-
-{{ page.title }}
-----------------
-
-<p class="meta">28 Aug 2014 - Buenos Aires, Argentina</p>
 
 It often happens that we mistake simple with easy, but them are very different. A simple thing is so even when it results hard, but an easy thing depends on who is considering it. It’s a matter of objectivity versus relativity. For saying, adding new features to our software by the adoption of several tools and conventions could be really easy, but hardly simple.
 

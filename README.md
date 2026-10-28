@@ -17,9 +17,8 @@ GitHub Pages serves as-is at https://agpelliza.github.io.
 | `_posts/` | Blog posts, one Markdown file each |
 | `_drafts/` | Unpublished posts (ignored by git) |
 | `guides/`, `experiences/` | Index pages listing posts of that category |
-| `references/`, `random/` | Standalone pages |
+| `references/` | Standalone page |
 | `css/`, `img/` | Static assets, copied as-is |
-| `atom.xml` | The feed |
 | `bin/deploy` | Builds the site and publishes it to `gh-pages` |
 
 ## Setup
@@ -54,25 +53,21 @@ Open http://localhost:4000. Pages rebuild when you save a file; changes to
 
 1. Create `_posts/YYYY-MM-DD-short-title.md` (or start it in `_drafts/`
    without the date prefix).
-2. Start it with front matter and the usual heading:
+2. Start it with front matter:
 
    ```markdown
    ---
-   layout: post
    title: My New Post
    category: guides
    ---
-
-   {{ page.title }}
-   ----------------
-
-   <p class="meta">16 Oct 2026 - Buenos Aires, Argentina</p>
 
    The post body...
    ```
 
    `category` is `guides` or `experiences`; it decides which index page lists
-   the post and its URL (`/guides/2026/10/16/my-new-post.html`).
+   the post and its URL (`/guides/2026/10/16/my-new-post.html`). The `post`
+   layout prints the title and the date line; the location defaults to
+   Buenos Aires, Argentina (set `location:` to change it).
 3. For code samples use a fenced block with a language, or
    `{% highlight bash %} ... {% endhighlight %}`.
 4. Preview it, then commit it to `master`.
