@@ -134,3 +134,60 @@ body {
     width: 670px;
   }
 }
+/*****************************************************************************/
+/*
+/* Training
+/*
+/*****************************************************************************/
+
+.training h1 {
+  margin-bottom: 0;
+}
+
+.training .meta {
+  color: #aaa;
+  font-size: 80%;
+  margin-top: 0.25em;
+}
+
+.training a {
+  color: #2795B6;
+  text-decoration: none;
+}
+
+.training table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.training th, .training td {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.training th {
+  color: #666;
+}
+
+.training nav.days {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 669px) {
+  .training {
+    padding: 0 16px;
+  }
+
+  .training table {
+    display: block;
+    overflow-x: auto;
+  }
+}
