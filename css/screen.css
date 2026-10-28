@@ -140,14 +140,19 @@ body {
 /*
 /*****************************************************************************/
 
-.training h1 {
+.training h2.title {
   margin-bottom: 0;
 }
 
 .training .meta {
   color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
   margin-top: 0.25em;
+}
+
+.training .back {
+  font-size: 80%;
 }
 
 .training a {

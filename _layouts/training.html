@@ -6,7 +6,7 @@ layout: default
 <div class="content">
   <div class="post training">
   {% if slug == "index" %}
-    <h1>{{ page.title }}</h1>
+    <h2 class="title">{{ page.title }}</h2>
     <p class="meta">{{ page.meta }}</p>
   {% else %}
     {% for d in days %}
@@ -19,8 +19,8 @@ layout: default
     {% assign next_i = i | plus: 1 | modulo: days.size %}
     {% assign prev = days[prev_i] %}
     {% assign next = days[next_i] %}
-    <p class="meta"><a href="/training/">&laquo; Plan semanal</a></p>
-    <h1>{{ day.dia }} – {{ day.sesion }}</h1>
+    <p class="back"><a href="/training/">&laquo; Plan semanal</a></p>
+    <h2 class="title">{{ day.dia }} – {{ day.sesion }}</h2>
     <p class="meta">{{ day.duracion }}{% if day.tenis == "Sí" %} · Día de tenis{% endif %}</p>
   {% endif %}
 
